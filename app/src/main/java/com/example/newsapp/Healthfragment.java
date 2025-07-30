@@ -24,7 +24,7 @@ public class Healthfragment extends Fragment {
     ArrayList<articleModal> mylist=new ArrayList<>();;
     MainAdapter adapter;
 
-    private String country="us";
+    private String country="in";
     private String category = "health";
 
     @Nullable
