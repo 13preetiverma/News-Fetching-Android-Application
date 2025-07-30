@@ -4,40 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDE0E0"
+    android:background="#8C60DC"
     tools:context=".splashScreen">
 
-    <TextView
-        android:id="@+id/logo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="145dp"
-        android:text="By Preeti"
-        android:textColor="@color/black"
-        android:textSize="25dp" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="135dp"
-        app:lottie_autoPlay="true"
-        android:layout_centerInParent="true"
-        app:lottie_rawRes="@raw/myanime" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/myanime" />
 
-    <ImageView
-        android:id="@+id/myimage"
-        android:layout_width="150dp"
-        android:layout_height="130dp"
-        android:layout_below="@+id/lottie"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/mypic" />
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Preeti Verma"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"/>
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>

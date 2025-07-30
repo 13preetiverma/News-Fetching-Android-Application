@@ -24,7 +24,7 @@ public class Enternainfragment extends Fragment {
     ArrayList<articleModal> mylist=new ArrayList<>();;
     MainAdapter adapter;
 
-    private String country="in";
+    private String country="us";
     private String category = "Entertainment";
     @Nullable
     @Override

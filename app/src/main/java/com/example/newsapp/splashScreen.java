@@ -13,7 +13,7 @@ public class splashScreen extends AppCompatActivity {
 
 
     TextView name;
-    ImageView myimage;
+    //ImageView myimage;
     LottieAnimationView lottie;
 
     @Override
@@ -23,11 +23,11 @@ public class splashScreen extends AppCompatActivity {
 
         name = findViewById(R.id.logo);
         lottie = findViewById(R.id.lottie);
-        myimage=findViewById(R.id.myimage);
+        //myimage=findViewById(R.id.myimage);
 
         name.animate().translationX(-1000).setDuration(2000).setStartDelay(1000);
         lottie.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
-        myimage.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
+        //myimage.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
 
 
         Thread thread = new Thread() {
