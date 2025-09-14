@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,26 +39,47 @@ public class Homefragment extends Fragment {
         adapter=new MainAdapter(getContext(),mylist);
         homeRecyc.setAdapter(adapter);
 
-        findNews();
+        //findNews();
+        findEverythingNews();
 
         return v;
 
     }
 
-    private void findNews() {
-        ApiUtilities.getApi_interface().getnews(country,100,apikey).enqueue(new Callback<mainNewsModal>() {
-            @Override
-            public void onResponse(Call<mainNewsModal> call, Response<mainNewsModal> response) {
-                if (response.isSuccessful()) {
-                    mylist.addAll(response.body().getArticles());
-                    adapter.notifyDataSetChanged();
-                }
-            }
+//    private void findNews() {
+//        ApiUtilities.getApi_interface().getnews(country,100,apikey).enqueue(new Callback<mainNewsModal>() {
+//            @Override
+//            public void onResponse(Call<mainNewsModal> call, Response<mainNewsModal> response) {
+//                if (response.isSuccessful()) {
+//                    mylist.addAll(response.body().getArticles());
+//                    adapter.notifyDataSetChanged();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<mainNewsModal> call, Throwable t) {
+//
+//            }
+//        });
+//    }
 
-            @Override
-            public void onFailure(Call<mainNewsModal> call, Throwable t) {
+    private void findEverythingNews() {
+        ApiUtilities.getApi_interface().getEverythingNews("India", 100, apikey)
+                .enqueue(new Callback<mainNewsModal>() {
+                    @Override
+                    public void onResponse(Call<mainNewsModal> call, Response<mainNewsModal> response) {
+                        if (response.isSuccessful() && response.body() != null) {
+                            mylist.clear();
+                            mylist.addAll(response.body().getArticles());
+                            adapter.notifyDataSetChanged();
+                        }
+                    }
 
-            }
-        });
+                    @Override
+                    public void onFailure(Call<mainNewsModal> call, Throwable t) {
+                        t.printStackTrace();
+                        Toast.makeText(getContext(), "Failed: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }

@@ -22,5 +22,11 @@ public interface Api_interface {
             @Query("category") String category,
             @Query("apiKey")String apikey
     );
+    @GET("everything")
+    Call<mainNewsModal> getEverythingNews(
+            @Query("q") String query,      // keyword to search (e.g., "India")
+            @Query("pageSize") int pageSize,
+            @Query("apiKey") String apiKey
+    );
 }
 

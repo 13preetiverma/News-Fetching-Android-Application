@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8C60DC"
+    android:background="@color/purple"
     tools:context=".splashScreen">
 
     <LinearLayout
@@ -20,18 +20,6 @@
             android:layout_height="wrap_content"
             app:lottie_autoPlay="true"
             app:lottie_rawRes="@raw/myanime" />
-
-        <TextView
-            android:id="@+id/logo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="By Preeti Verma"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_marginTop="150dp"/>
-
-
     </LinearLayout>
 
 

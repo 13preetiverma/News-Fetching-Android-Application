@@ -12,7 +12,7 @@ import com.airbnb.lottie.LottieAnimationView;
 public class splashScreen extends AppCompatActivity {
 
 
-    TextView name;
+    //TextView name;
     //ImageView myimage;
     LottieAnimationView lottie;
 
@@ -21,11 +21,11 @@ public class splashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        name = findViewById(R.id.logo);
+        //name = findViewById(R.id.logo);
         lottie = findViewById(R.id.lottie);
         //myimage=findViewById(R.id.myimage);
 
-        name.animate().translationX(-1000).setDuration(2000).setStartDelay(1000);
+        //name.animate().translationX(-1000).setDuration(2000).setStartDelay(1000);
         lottie.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
         //myimage.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
 

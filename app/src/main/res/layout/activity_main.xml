@@ -15,8 +15,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="News Only"
-            android:textColor="#8C60DC"
+            android:text="Insort News"
+            android:textColor="@color/purple"
             android:textSize="25dp"
             android:textStyle="bold"/>
 
@@ -27,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         app:tabTextColor="#959697"
-        app:tabSelectedTextColor="#8C60DC"
-        app:tabIndicatorColor="#8C60DC"
+        app:tabSelectedTextColor="@color/purple"
+        app:tabIndicatorColor="@color/purple"
         app:tabIndicatorHeight="3.5dp"
         android:layout_below="@+id/toolbar"
         app:tabMode="scrollable"
