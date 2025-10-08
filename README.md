@@ -15,6 +15,10 @@ A modern and lightweight News Fetching App that brings you the latest, category-
 
 ⚡ Fast & Lightweight – Optimized fetching with efficient API integration..
 
+Project Demo:
+
+https://github.com/13preetiverma/News-Fetching-Android-Application/blob/main/inshort-app.gif
+
 📸 Screenshots
 
 ![WhatsApp Image 2025-09-14 at 17 01 25_856e6179](https://github.com/user-attachments/assets/29452fdd-cd4b-4689-a206-d18b6d6f94d9)   
