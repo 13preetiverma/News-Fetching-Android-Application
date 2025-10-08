@@ -15,9 +15,10 @@ A modern and lightweight News Fetching App that brings you the latest, category-
 
 ⚡ Fast & Lightweight – Optimized fetching with efficient API integration..
 
-Project Demo:
+## 🎥 Demo
 
-inshort-app.gif
+![App Demo](assets/inshort-app.gif)
+
 
 📸 Screenshots
 
