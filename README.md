@@ -17,7 +17,7 @@ A modern and lightweight News Fetching App that brings you the latest, category-
 
 Project Demo:
 
-https://github.com/13preetiverma/News-Fetching-Android-Application/blob/main/inshort-app.gif
+inshort-app.gif
 
 📸 Screenshots
 
